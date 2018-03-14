@@ -10,7 +10,7 @@ public class English {
     private Random random;
 
     public void prepare() throws FileNotFoundException {
-        Scanner scanner = new Scanner( new File("norm_hamlet.txt") );
+        Scanner scanner = new Scanner( new File("norm_wiki_sample.txt") );
         sourceText = scanner.useDelimiter("\\A").next();
         random = new Random();
     }
@@ -97,6 +97,8 @@ public class English {
                 count++;
             }
         }
-        return text.length()/count;
+        return (text.length()-count)/count;
     }
+
+
 }
