@@ -13,8 +13,15 @@ EnglishWords englishWords = new EnglishWords();
 //            english.firstRank(10000);
 //            english.thirdRank(2000);
 //            english.fifthRank(1000);
+
             englishWords.prepare();
-            englishWords.process();
+
+            englishWords.prepareFirstRank();
+            englishWords.approxFirstRank(50);
+
+            englishWords.prepareSecondRank();
+            englishWords.approxSecondRank(50);
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
