@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) throws FileNotFoundException {
 English english = new English();
 EnglishWords englishWords = new EnglishWords();
+Entropy entropy = new Entropy();
         try {
 //            english.prepare();
 //            english.firstRank(10000);
@@ -16,11 +16,14 @@ EnglishWords englishWords = new EnglishWords();
 
             englishWords.prepare();
 
-            englishWords.prepareFirstRank();
-            englishWords.approxFirstRank(50);
+//            englishWords.prepareFirstRank();
+//            englishWords.approxFirstRank(50);
+//
+//            englishWords.prepareSecondRank();
+//            englishWords.approxSecondRank(50);
 
-            englishWords.prepareSecondRank();
-            englishWords.approxSecondRank(50);
+            entropy.charEntropy(2);
+
 
 
         } catch (FileNotFoundException e) {
