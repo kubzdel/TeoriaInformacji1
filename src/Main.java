@@ -22,7 +22,11 @@ Entropy entropy = new Entropy();
 //            englishWords.prepareSecondRank();
 //            englishWords.approxSecondRank(50);
 
-            entropy.charEntropy(2);
+          //  entropy.charEntropy(2);
+//            entropy.wordEntropy();
+//            entropy.wordEntropyN(2);
+            entropy.processFiles(4);
+
 
 
 
